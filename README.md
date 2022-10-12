@@ -40,6 +40,16 @@ $$
 
 **方差就是协方差的一种特殊形式**，当两个变量相同时，协方差就是方差了
 
+另一种用期望来表示的方式：
+
+$$
+\begin{aligned}
+\operatorname{Cov}(X, Y)=& \mathrm{E}[(X-\mathrm{E}[X])(Y-\mathrm{E}[Y])] \\
+&=\mathrm{E}[X Y]-2 \mathrm{E}[Y] \mathrm{E}[X]+\mathrm{E}[X] \mathrm{E}[Y] \\
+&=\mathrm{E}[X Y]-\mathrm{E}[X] \mathrm{E}[Y]=\mathrm{E}[X Y]-\mathrm{E}[X] \mathrm{E}[Y]
+\end{aligned}
+$$
+
 #### 协方差矩阵
 协方差矩阵就是很多个变量两两之间的协方差，构成的矩阵：给定d个随机变量，根据协方差的定义，求出两两之间的协方差（每个随机变量都有n个观测值，故都有一个观测样本的均值）
 
