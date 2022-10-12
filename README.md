@@ -22,6 +22,8 @@ $$
 M S E=\frac{1}{m} \sum_{i=1}^m\left(y i-f\left(x_i\right)\right)^2
 $$
 
+范围[0,+∞)，当预测值与真实值完全吻合时等于0，即完美模型；误差越大，该值越大。
+
 ### RMSE（Root Mean Square Error）均方根误差
 均方根误差是预测值与真实值偏差的平方与观测次数n比值的平方根。
 
