@@ -146,4 +146,16 @@ $$
 y=\beta_0+\beta_1 x+\mu
 $$
 
-我们假定模型已经被求出，则用ei表示每一个预测值与真实值之间的差距：$ e_i=y_i-\hat{y} $
+我们假定模型已经被求出，则用$e_i$表示每一个预测值与真实值之间的差距：
+
+$$
+e_i=y_i-\hat{y}_i
+$$
+
+再将所有的$e_i^2$相加，就能量化出拟合的直线和实际之间的误差。公式如下：
+
+$$
+Q=\sum_1^n\left(y_i-\hat{y}_i\right)^2=\sum_1^n\left(y_i-\left(\hat{\beta}_0+\hat{\beta}_1 x_i\right)\right)^2
+$$
+
+这个公式是残差平方和，即SSE（Sum of Squares for Error），在机器学习中它是回归问题中最常用的损失函数。
