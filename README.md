@@ -15,7 +15,8 @@ $$
 
 ## 一些术语和指标
 
-### MSE（Mean Square Error）均方误差
+### 预测评价指标
+#### MSE（Mean Square Error）均方误差
 真实值与预测值的插值的平方然后求和平均
 
 $$
@@ -24,7 +25,7 @@ $$
 
 范围[0,+∞)，当预测值与真实值完全吻合时等于0，即完美模型；误差越大，该值越大。
 
-### RMSE（Root Mean Square Error）均方根误差
+#### RMSE（Root Mean Square Error）均方根误差
 均方根误差是预测值与真实值偏差的平方与观测次数n比值的平方根。其实就是MSE加了个根号，这样数量级上比较直观，比如RMSE=10，可以认为回归效果相比真实值平均相差10。
 
 衡量的是预测值与真实值之间的偏差，并且对数据中的异常值较为敏感。
@@ -35,14 +36,14 @@ $$
 
 RMSE与标准差对比：标准差是用来衡量一组数自身的离散程度，而均方根误差是用来衡量观测值同真值之间的偏差，它们的研究对象和研究目的不同，但是计算过程类似。
 
-### MAE（Mean Absolute Error）平均绝对误差
+#### MAE（Mean Absolute Error）平均绝对误差
 范围[0,+∞)，当预测值与真实值完全吻合时等于0，即完美模型；误差越大，该值越大。
 
 $$
 \mathrm{MAE}=\frac{1}{\mathrm{n}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left|\hat{y}_{\mathrm{i}}-\mathrm{y}_{\mathrm{i}}\right|
 $$
 
-### MAPE（Mean Absolute Percentage Error）平均绝对百分比误差
+#### MAPE（Mean Absolute Percentage Error）平均绝对百分比误差
 范围[0,+∞)，MAPE 为0%表示完美模型，MAPE 大于 100 %则表示劣质模型。
 
 可以看到，MAPE跟MAE很像，就是多了个分母。
@@ -53,7 +54,7 @@ $$
 \operatorname{MAPE}=\frac{100 \%}{\mathrm{n}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left|\frac{\hat{\mathrm{y}}_{\mathrm{i}}-\mathrm{y}_{\mathrm{i}}}{\mathrm{y}_{\mathrm{i}}}\right|
 $$
 
-### SMAPE（Symmetric Mean Absolute Percentage Error）对称平均绝对百分比误差
+#### SMAPE（Symmetric Mean Absolute Percentage Error）对称平均绝对百分比误差
 注意点：当真实值有数据等于0，而预测值也等于0时，存在分母0除问题，该公式不可用！
 
 $$
