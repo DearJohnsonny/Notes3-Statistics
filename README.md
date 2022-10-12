@@ -12,5 +12,3 @@ $$\left( \sum{k=1}^n a_k b_k \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \lef
 (x<sup>2</sup> + y<sup>2</sup> - 1)<sup>3</sup> - x<sup>2</sup>y<sup>3</sup> = 0
 
 $\ S^{2}=\dfrac{1}{n}\sum^ {n}_{i=1}\left( Xi-\mu \right) ^{2}$
-
-$\ S^{2}=\dfrac{1}{n-1}\sum ^{n}_{i=1}\left( x_{i}-\mu \right) ^{2}$
