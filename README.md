@@ -15,4 +15,4 @@ $\ S^{2}=\dfrac{1}{n}\sum^ {n}_{i=1}\left( Xi-\mu \right) ^{2}$
 
 $\ S^{2}=\dfrac{1}{n}\sum^ {n}_{i=1}\left( Xi-\mu \right) ^{2}$
 
-$\ S^{2}=\dfrac{1}{n}\sum ^{n}_{i=1}\left( x_{i}-\mu \right) ^{2}$
+$\ S^{2}=\dfrac{1}{n}\sum ^{n}_{i=1}\left( X_{i}-\mu \right) ^{2}$
