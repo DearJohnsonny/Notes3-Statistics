@@ -146,16 +146,25 @@ $$
 y=\beta_0+\beta_1 x+\mu
 $$
 
-我们假定模型已经被求出，则用$e_i$表示每一个预测值与真实值之间的差距：
+我们假定模型已经被求出，则用ei表示每一个预测值与真实值之间的差距：
 
 $$
 e_i=y_i-\hat{y}_i
 $$
 
-再将所有的$e_i^2$相加，就能量化出拟合的直线和实际之间的误差。公式如下：
+再将所有的e_i^2相加，就能量化出拟合的直线和实际之间的误差。公式如下：
 
 $$
 Q=\sum_1^n\left(y_i-\hat{y}_i\right)^2=\sum_1^n\left(y_i-\left(\hat{\beta}_0+\hat{\beta}_1 x_i\right)\right)^2
 $$
 
-这个公式是残差平方和，即SSE（Sum of Squares for Error），在机器学习中它是回归问题中最常用的损失函数。
+这个公式是残差平方和，即SSE（Sum of Squares for Error），在机器学习中它是回归问题中最常用的损失函数。这个公式是一个二次方程，上面公式中β0和β1未知，有两个未知参数的二次方程，画出来是一个三维空间中的图像，因此我们分别对β0和β1求偏导并令其为0：
+
+$$
+\begin{aligned}
+&\frac{\partial Q}{\partial \beta_0}=2 \sum_1^n\left(y_i-\hat{\beta}_0-\hat{\beta}_1 x_i\right)=0 \\
+&\frac{\partial Q}{\partial \beta_1}=2 \sum_1^n\left(y_i-\hat{\beta}_0-\hat{\beta}_1 x_i\right) x_i=0
+\end{aligned}
+$$
+
+从而利用xi和yi将β0和β1反解出来，与中学背的那一串是一样的。
