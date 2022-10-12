@@ -137,5 +137,5 @@ $$
 只用一个x来预测y
 
 $$
-hat{y}=\beta_0+\beta_1 x
+\hat{y}=\beta_0+\beta_1 x
 $$
