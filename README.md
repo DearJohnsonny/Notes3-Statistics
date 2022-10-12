@@ -158,7 +158,7 @@ $$
 Q=\sum_1^n\left(y_i-\hat{y}_i\right)^2=\sum_1^n\left(y_i-\left(\hat{\beta}_0+\hat{\beta}_1 x_i\right)\right)^2
 $$
 
-这个公式是残差平方和，即SSE（Sum of Squares for Error），在机器学习中它是回归问题中最常用的损失函数。这个公式是一个二次方程，上面公式中β0和β1未知，有两个未知参数的二次方程，画出来是一个三维空间中的图像，因此我们分别对β0和β1求偏导并令其为0：
+这个公式是残差平方和，即SSE（Sum of Squares for Error），在机器学习中它是回归问题中最常用的损失函数（loss function）。这个公式是一个二次方程，上面公式中β0和β1未知，有两个未知参数的二次方程，画出来是一个三维空间中的图像，因此我们分别对β0和β1求偏导并令其为0：
 
 $$
 \begin{aligned}
