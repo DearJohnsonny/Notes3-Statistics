@@ -13,6 +13,26 @@ $$
 
 # Basic  statistics knowledge
 
+## 一些术语和指标
+
+### MSE（Mean Square Error）均方误差
+真实值与预测值的插值的平方然后求和平均
+
+$$
+M S E=\frac{1}{m} \sum_{i=1}^m\left(y i-f\left(x_i\right)\right)^2
+$$
+
+### RMSE（Root Mean Square Error）均方根误差
+均方根误差是预测值与真实值偏差的平方与观测次数n比值的平方根。
+
+衡量的是预测值与真实值之间的偏差，并且对数据中的异常值较为敏感。
+
+$$
+R M S E=\sqrt{\frac{1}{N} \sum_{i=1}^n\left(Y_i-f\left(x_i\right)\right)^2}
+$$
+
+RMSE与标准差对比：标准差是用来衡量一组数自身的离散程度，而均方根误差是用来衡量观测值同真值之间的偏差，它们的研究对象和研究目的不同，但是计算过程类似。
+
 ## 线性回归 Linear Regression
 
 ## 方差分析
