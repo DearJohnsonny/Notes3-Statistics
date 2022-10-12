@@ -16,7 +16,7 @@ $$
 ## 线性回归 Linear Regression
 
 ## 方差分析
-为什么样本方差用的是
+##### 关于样本方差用n-1
 
 $$
 S^2=\frac{1}{n-1} \sum_{i=1}^n\left(X_i-\bar{X}\right)^2
