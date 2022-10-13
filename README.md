@@ -184,4 +184,53 @@ $$
 从而利用xi和yi将β0和β1反解出来，与中学背的那一串是一样的。这就是最小二乘法，“二乘”是平方的意思。最小二乘法：所选择的回归模型应该使所有观察值的残差平方和达到最小，即采用平方损失函数
 
 ### 多元线性回归
-比一元线性回归复杂的是，多元线性回归组成的不是直线，是一个多维空间中的超平面，数据点散落在超平面两侧。比如二元线性回归预测的是一个平面
+比一元线性回归复杂的是，多元线性回归组成的不是直线，是一个多维空间中的超平面，数据点散落在超平面两侧。比如二元线性回归预测的是一个平面。
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/195474650-1b26c285-29f0-4374-8505-2bba2ba5f6b4.png" width="900">
+</div>
+
+当有D种维度的影响因素时，机器学习领域将这D种影响因素成为特征(feature)，每个样本有一个需要预测的Y和一组D维向量X hat，原来的参数m变成了D维的向量W
+
+表示为如下：
+
+$$
+\begin{gathered}
+y_i=b+\sum_{d=1}^D w_d x_{i, d} \quad b=w_{D+1} \\
+y_i=\sum_{d=1}^{D+1} w_d x_{i, d}
+\end{gathered}
+$$
+
+为了表示方便，将独立出来的偏置项归纳到向量W中，b= WD+1，将D维特征扩展成为D+1维
+
+$$
+\mathbf{w}=\left[\begin{array}{c}
+w_1 \\
+w_2 \\
+\vdots \\
+w_D \\
+w_{D+1}
+\end{array}\right] \quad \mathbf{X}=\left[\begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_N
+\end{array}\right]=\left(\begin{array}{ccccc}
+x_{1,1} & x_{1,2} & \cdots & x_{1, D} & 1 \\
+x_{2,1} & x_{2,2} & \cdots & x_{2, D} & 1 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+x_{N, 1} & x_{N, 2} & \cdots & x_{N, D} & 1
+\end{array}\right) \quad \mathbf{y}=\left[\begin{array}{c}
+y_1 \\
+y_2 \\
+\vdots \\
+y_N
+\end{array}\right]
+$$
+
+从而：
+
+$$
+y_i=\sum_{d=1}^{D+1} w_d x_{i, d}=\mathbf{w}^{\top} \mathbf{x}_{\mathbf{i}} \Rightarrow \mathbf{y}=\mathbf{X} \mathbf{w}
+$$
+
