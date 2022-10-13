@@ -7,6 +7,9 @@
 <img src="https://user-images.githubusercontent.com/111955215/195361749-01b1343d-0dc6-497b-bbc1-1b0ae149ca5e.png" width="900">
 </div>
 
+$\sum{a}$
+
+
 # Basic  statistics knowledge
 
 ## 一些术语和指标
@@ -265,4 +268,3 @@ $$
 
 **但是**：X^TX在现实任务中往往不是满秩矩阵（未知数大于方程个数。如：3个变量，但是只有2个方程，故无法求得唯一的解），所以无法求解矩阵的逆，故无法求得唯一的解。遇到这种情况，需要进行：1）降维处理（LASSO和PLS偏最小二乘法）；2）引入正则化(regularization)：将矩阵补成满秩
 
-\sum{a}
