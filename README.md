@@ -7,6 +7,9 @@
 <img src="https://user-images.githubusercontent.com/111955215/195361749-01b1343d-0dc6-497b-bbc1-1b0ae149ca5e.png" width="900">
 </div>
 
+This sentence uses $ delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
+
+This sentence uses $ delimiters to show math inline: $ sqrt{3x-1}+(1+x)^2$
 # Basic  statistics knowledge
 
 ## 一些术语和指标
