@@ -234,3 +234,33 @@ $$
 y_i=\sum_{d=1}^{D+1} w_d x_{i, d}=\mathbf{w}^{\top} \mathbf{x}_{\mathbf{i}} \Rightarrow \mathbf{y}=\mathbf{X} \mathbf{w}
 $$
 
+因此对多元线性回归的损失函数做最小二乘法：
+
+$$
+L(w)=(\mathbf{X} \mathbf{w}-\mathbf{y})^{\top}(\mathbf{X} \mathbf{w}-\mathbf{y})=\|\mathbf{X} \mathbf{w}-\mathbf{y}\|_2^2
+$$
+
+上图的右边读作L2范数的平方，下图展示了一个向量x的L2范数的平方及其导数
+
+$$
+\|\mathbf{x}\|_2^2=\left(\left(\sum_{i=1}^N x_i^2\right)^1 / 2\right)^2 \quad \nabla\|\mathbf{x}\|_2^2=2 \mathbf{x}
+$$
+
+因此对L(w)求导，得到下式：
+
+$$
+\frac{\partial}{\partial \mathbf{w}} L(\mathbf{w})=2 \mathbf{X}^{\top}(\mathbf{X} \mathbf{w}-\mathbf{y})=0
+$$
+
+从而推出：
+
+$$
+\begin{gathered}
+\mathbf{X}^{\top} \mathbf{X} \mathbf{w}=\mathbf{X}^{\top} \mathbf{y} \Rightarrow\left(\mathbf{X}^{\top} \mathbf{X}\right)^{-1} \mathbf{X}^{\top} \mathbf{X} \mathbf{w}=\left(\mathbf{X}^{\top} \mathbf{X}\right)^{-1} \mathbf{X}^{\top} \mathbf{y} \\
+\mathbf{w}^*=\left(\mathbf{X}^{\top} \mathbf{X}\right)^{-1} \mathbf{X}^{\top} \mathbf{y}
+\end{gathered}
+$$
+
+最优解其实是在根据自变量向量X和因变量标量y求解。
+
+**但是**：$X^T X$在现实任务中往往不是满秩矩阵（未知数大于方程个数。如：3个变量，但是只有2个方程，故无法求得唯一的解），所以无法求解矩阵的逆，故无法求得唯一的解。遇到这种情况，需要进行：1）降维处理（LASSO和PLS偏最小二乘法）；2）引入正则化(regularization)：将矩阵补成满秩
