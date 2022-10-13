@@ -10,13 +10,13 @@
 # Linear Algebra
 
 ## Lengths and Dot Products
-The length $\|v\|$ of a vector v is the square root of $v \cdot v$ 
+The length $\|v\|$ of a vector v is the square root of $**v** \cdot **v**$ 
 
 $$
 \text { length }=\|\boldsymbol{v}\|=\sqrt{\boldsymbol{v} \cdot \boldsymbol{v}}=\left(v_1^2+v_2^2+\cdots+v_n^2\right)^{1 / 2}
 $$
 
-$v \cdot v$ 相当于 $V^T V$
+$**v** \cdot **v**$ 相当于 $V^T V$
 # Basic  statistics knowledge
 
 ## 一些术语和指标
