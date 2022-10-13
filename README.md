@@ -7,6 +7,16 @@
 <img src="https://user-images.githubusercontent.com/111955215/195361749-01b1343d-0dc6-497b-bbc1-1b0ae149ca5e.png" width="900">
 </div>
 
+# Linear Algebra
+
+## Lengths and Dot Products
+The length $\|v\|$ of a vector v is the square root of $v \cdot v$ 
+
+$$
+\text { length }=\|\boldsymbol{v}\|=\sqrt{\boldsymbol{v} \cdot \boldsymbol{v}}=\left(v_1^2+v_2^2+\cdots+v_n^2\right)^{1 / 2}
+$$
+
+$v \cdot v$ 相当于 $V^T V$
 # Basic  statistics knowledge
 
 ## 一些术语和指标
