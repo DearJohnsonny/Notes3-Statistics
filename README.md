@@ -133,6 +133,20 @@ $$
 
 目标：模型预测出来的值和真实值无限接近
 
+当此为一元线性回归时，向量W为标量1，该式子表示为：
+
+$$
+\hat{y}=m x+b
+$$
+
+而线性回归实际上就是求优化的过程：
+
+$$
+m^*, b^*=\underset{m, b}{\arg \min } L(m, b)=\underset{m, b}{\arg \min } \frac{1}{N} \sum_{i=1}^N\left[\left(m x_i+b\right)-y_i\right]^2
+$$
+
+argmin(L)就是对L中的参数进行优化
+
 ### 一元线性回归
 只用一个x来预测y的模型
 
