@@ -6,7 +6,7 @@
 <a href="https://dearjohnsonny.github.io/Notes-from-DearJohn-4/">Notes from DearJohn-4</a>
 
 <div align=center>
-<img src="" width="900">
+<img src="https://user-images.githubusercontent.com/111955215/195480442-4400afc5-bc7a-4180-ab3c-ddedbac9c585.png" width="900">
 </div>
 
 # Basic  statistics knowledge
