@@ -1,7 +1,7 @@
 
 <a href="https://dearjohnsonny.github.io/Notes-from-DearJohn/">Notes1-Biotech</a>
 
-<a href="https://dearjohnsonny.github.io/Notes-from-DearJohn-2/">Notes from DearJohn-2</a>
+<a href="https://dearjohnsonny.github.io/Notes-from-DearJohn-2/">Notes2-Biotech</a>
 
 <a href="https://dearjohnsonny.github.io/Notes-from-DearJohn-4/">Notes4-Linear-Algebra</a>
 
