@@ -61,7 +61,7 @@ $$
 <img src="https://user-images.githubusercontent.com/111955215/196455706-f82dc502-b1f3-4a4b-99c2-123ad3553e3b.png" width="900">
 </div>
 
-可以看出，在θ = 0.7 \theta = 0.7θ=0.7时，似然函数取得最大值。则取值为0.7
+可以看出，在θ = 0.7时，似然函数取得最大值。则取值为0.7
 
 #### 最大后验概率估计（Maximum A Posteriori estimation,MAP）
 MAP认为，θ是一个随机变量，其先验概率密度函数是已知的，为P(θ)，所以其目标为最大化 $\mathrm{P}\left(\theta \mid \mathrm{x}_0\right)=\frac{\mathrm{P}\left(\mathrm{x}_0 \mid \theta\right) \mathrm{P}(\theta)}{\mathrm{P}\left(\mathrm{x}_0\right)}$， 不过因为 $\mathrm{x}_0$ 是确定的（即投出的“反正正正正反正正正反”)， $\mathrm{P}\left(\mathrm{x}_0\right)$ 是一个已知值，
@@ -72,7 +72,7 @@ $$
 \hat{\theta}_{M A P}=\arg \max _\theta P(x \mid \theta) P(\theta)
 $$
 
-以上面的扔硬币的例子来看，对于一个硬币，大概率认为他是正常的，正面的概率为0.5的可能性最大 $P(\theta)=\theta(1-\theta)$. 甚至可以是 $P(\theta)=\theta^n(1-\theta)^n$.（只需要保证 $\theta$ 和1- $\theta$ 的指数相同即可）
+以上面的扔硬币的例子来看，对于一个硬币，大概率认为他是正常的，正面的概率为0.5的可能性最大 $P(\theta)=\theta(1-\theta)$. 甚至可以是 $P(\theta)=\theta^n(1-\theta)^n$.（只需要保证 θ和1-θ的指数相同即可）
 
 那么最后的似然函数为： $y=x^8(1-x)^4$ 得到的函数图与之前的相比不同：
 
@@ -81,7 +81,7 @@ $$
 </div>
 
 
-举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为 $ \theta$ 为1，但是极大似然估计不是，也得到的是一个分布， $ \theta$ 不为1
+举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为θ为1，但是极大似然估计不是，也得到的是一个分布，θ不为1
 
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/196460488-b7d8ac26-6fd5-4bbe-9ddc-cebe18895f52.png" width="1500">
