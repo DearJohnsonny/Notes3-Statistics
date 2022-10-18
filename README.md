@@ -72,7 +72,7 @@ $$
 \hat{\theta}_{M A P}=\arg \max _\theta P(x \mid \theta) P(\theta)
 $$
 
-以上面的扔硬币的例子来看，对于一个硬币，大概率认为他是正常的，正面的概率为0.5的可能性最大 $P(\theta)=\theta(1-\theta)$. 甚至可以是 $P(\theta)=\theta^n(1-\theta)^n$.（只需要保证 $theta$ 和1- $theta$ 的指数相同即可）
+以上面的扔硬币的例子来看，对于一个硬币，大概率认为他是正常的，正面的概率为0.5的可能性最大 $P(\theta)=\theta(1-\theta)$. 甚至可以是 $P(\theta)=\theta^n(1-\theta)^n$.（只需要保证 $\theta$ 和1- $\theta$ 的指数相同即可）
 
 那么最后的似然函数为： $y=x^8(1-x)^4$ 得到的函数图与之前的相比不同：
 
