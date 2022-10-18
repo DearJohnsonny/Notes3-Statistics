@@ -66,12 +66,13 @@ $$
 #### 最大后验概率估计（Maximum A Posteriori estimation,MAP）
 MAP认为，θ是一个随机变量，其先验概率密度函数是已知的，为P(θ)，所以其目标为最大化 $\mathrm{P}\left(\theta \mid \mathrm{x}_0\right)=\frac{\mathrm{P}\left(\mathrm{x}_0 \mid \theta\right) \mathrm{P}(\theta)}{\mathrm{P}\left(\mathrm{x}_0\right)}$， 不过因为 $\mathrm{x}_0$ 是确定的（即投出的“反正正正正反正正正反”)， $\mathrm{P}\left(\mathrm{x}_0\right)$ 是一个已知值，
 
+因此需要优化的函数为：
 
 $$
 \hat{\theta}_{M A P}=\arg \max _\theta P(x \mid \theta) P(\theta)
 $$
 
-
+以上面的扔硬币的例子来看，对于一个硬币，大概率认为他是正常的，正面的概率为0.5的可能性最大 $P(\theta)=\theta(1-\theta)$. 甚至可以是 $P(\theta)=\theta^n(1-\theta)^n$.
 
 # Basic  statistics knowledge
 
