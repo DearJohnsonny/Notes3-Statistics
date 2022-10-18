@@ -80,12 +80,15 @@ $$
 <img src="https://user-images.githubusercontent.com/111955215/196459724-d88c5b25-78fa-4079-baa0-59664a4eab79.png" width="1500">
 </div>
 
-
 举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为θ为1，但是极大似然估计不是，也得到的是一个分布，θ不为1
 
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/196460488-b7d8ac26-6fd5-4bbe-9ddc-cebe18895f52.png" width="1500">
 </div>
+
+* 显然，随着数据量的增加，参数分布会更倾向于向数据靠拢，先验假设的影响会越来越小。
+* 随着数据的增加，先验的作用越来越弱，数据的作用越来越强，参数的分布会向着最大似然估计靠拢。
+* 而且可以证明，最大后验估计的结果是先验和最大似然估计的凸组合。
 
 # Basic  statistics knowledge
 
