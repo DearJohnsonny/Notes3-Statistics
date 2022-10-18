@@ -81,7 +81,7 @@ $$
 </div>
 
 
-举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为 $ theta$ 为1，但是极大似然估计不是，也得到的是一个分布， $ theta$ 不为1
+举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为 $ \theta$ 为1，但是极大似然估计不是，也得到的是一个分布， $ \theta$ 不为1
 
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/196460488-b7d8ac26-6fd5-4bbe-9ddc-cebe18895f52.png" width="1500">
