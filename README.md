@@ -74,12 +74,18 @@ $$
 
 以上面的扔硬币的例子来看，对于一个硬币，大概率认为他是正常的，正面的概率为0.5的可能性最大 $P(\theta)=\theta(1-\theta)$. 甚至可以是 $P(\theta)=\theta^n(1-\theta)^n$.（只需要保证 $theta$ 和1- $theta$ 的指数相同即可）
 
-那么最后的似然函数为： $y=x^8(1-x)^4$ 得到的函数图与之前的相比
+那么最后的似然函数为： $y=x^8(1-x)^4$ 得到的函数图与之前的相比不同：
 
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/196459724-d88c5b25-78fa-4079-baa0-59664a4eab79.png" width="1500">
 </div>
 
+
+举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为 $ theta$ 为1，但是极大似然估计不是，也得到的是一个分布， $ theta$ 不为1
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/196460488-b7d8ac26-6fd5-4bbe-9ddc-cebe18895f52.png" width="1500">
+</div>
 
 # Basic  statistics knowledge
 
