@@ -80,6 +80,8 @@ $$
 <img src="https://user-images.githubusercontent.com/111955215/196459724-d88c5b25-78fa-4079-baa0-59664a4eab79.png" width="1500">
 </div>
 
+对于刚才的投硬币问题，我们将θ的概率分布假设为均值为0.5，方差为1的正态分布，即θ的密度函数可表示为： $f(\theta)=\frac{1}{\sqrt{2 \pi}} e^{-\frac{(\theta-0.5)^2}{2}}$
+
 举极端的例子，如果抛10、100、1000次硬币，得到的都是正面，则MLE认为θ为1，但是极大似然估计不是，也得到的是一个分布，θ不为1
 
 <div align=center>
