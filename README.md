@@ -49,7 +49,17 @@ $$
 \frac{1}{\sqrt{n} \sigma}\left(X_1+\cdots+X_n-n \mu\right) \stackrel{d}{\rightarrow} N(0,1)
 $$
 
+证明：
+
+这个定理是容易理解、记忆的。首先记住{ $X_n$ }的均值 $X_n$ 近似服从正态分布，接下来只需要解 出这个正态分布的期望和方差。期望有
+$\mathbb{E} \bar{X}_n=\frac{1}{n} \sum_{i=1}^n \mathbb{E} X_i=\frac{n \mu}{n}=\mu$
+方差有
+$\mathbb{D} \bar{X}_n=\frac{1}{n^2} \sum_{i=1}^n \mathbb{D} X_i=\frac{n \sigma^2}{n^2}=\frac{\sigma^2}{n}$
+那么 $\bar{X}_n$ 近似服从的正态分布就是 $N\left(\mu, \frac{\sigma^2}{n}\right)$ ，归一化后的随机变量 $\frac{\bar{X}_n-\mu}{\sigma / \sqrt{n}}$ 近似服从标准正态分布 $N(0,1)$.
+
 理解：当样本容量足够大时，样本均值服从正态分布（样本均值的分布会慢慢变成正态分布）。其均值为总体均值，方差为总体方差的1/n。其实也是在刻画样本均值趋向于总体均值，只是刻画得更细（**不管总体是什么分布，任意一个总体的样本平均值都会围绕在总体的整体平均值周围，并且呈正态分布**）
+
+![image](https://user-images.githubusercontent.com/111955215/196581592-fd44d86c-140d-4696-a099-2cadff3cbf23.png)
 
 应用：样本量较大时的区间估计和**假设检验理论基础**
 
