@@ -22,13 +22,13 @@
 
 ## 大数定律和中心极限定理
 ### 大数定律
-定理  设 $\left\{X_n\right\}$ 是一列独立同分布 (i.i.d.) 的随机变量序列, 具有 公共的数学期望 $\mu$ 和方差 $\sigma^2$. 则
+定理  设 ${X_n}$ 是一列独立同分布 (i.i.d.) 的随机变量序列, 具有公共的数学期望 $\mu$ 和方差 $\sigma^2$. 则
 
 $$
 \bar{X}=\frac{1}{n} \sum_{k=1}^n X_k \stackrel{p}{\rightarrow} \mu,
 $$
 
-即 $\left\{X_n\right\}$ 服从 (弱) 大数定律。
+即 ${X_n}$ 服从 (弱) 大数定律。
 
 理解：当样本容量足够大时，样本均值趋向于总体均值（说白了就是期望）
 
@@ -37,7 +37,7 @@ $$
 应用：大数定理说明了，足够大的样本可以反映出总体的真实组成。这让我们放心地去抽样调查，去monte carlo模拟等等
 
 ### 中心极限定理
-定理  设 $\left\{X_n\right\}$ 为 i.i.d 的随机变量序列, 具有公共的数学期望 $\mu$ 和方差 $\sigma^2$. 则 $X_1+\cdots+X_n$ 的标准化形式 $\frac{1}{\sqrt{n} \sigma}\left(X_1+\cdots+X_n-n \mu\right)$ 满足中心极限定理. 即对任意 $x \in \mathbb{R}$, 有
+定理  设 ${X_n}$ 为 i.i.d 的随机变量序列, 具有公共的数学期望 $\mu$ 和方差 $\sigma^2$. 则 $X_1+\cdots+X_n$ 的标准化形式 $\frac{1}{\sqrt{n} \sigma}\left(X_1+\cdots+X_n-n \mu\right)$ 满足中心极限定理. 即对任意 $x \in \mathbb{R}$, 有
 
 $$
 \lim _{n \rightarrow \infty} F_n(x)=\Phi(x),
