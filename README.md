@@ -23,9 +23,11 @@
 ## 大数定律和中心极限定理
 ### 大数定律
 定理  设 $\left\{X_n\right\}$ 是一列独立同分布 (i.i.d.) 的随机变量序列, 具有 公共的数学期望 $\mu$ 和方差 $\sigma^2$. 则
+
 $$
 \bar{X}=\frac{1}{n} \sum_{k=1}^n X_k \stackrel{p}{\rightarrow} \mu,
 $$
+
 即 $\left\{X_n\right\}$ 服从 (弱) 大数定律。
 
 理解：当样本容量足够大时，样本均值趋向于总体均值（说白了就是期望）
@@ -36,10 +38,13 @@ $$
 
 ### 中心极限定理
 定理  设 $\left\{X_n\right\}$ 为 i.i.d 的随机变量序列, 具有公共的数学期望 $\mu$ 和方差 $\sigma^2$. 则 $X_1+\cdots+X_n$ 的标准化形式 $\frac{1}{\sqrt{n} \sigma}\left(X_1+\cdots+X_n-n \mu\right)$ 满足中心极限定理. 即对任意 $x \in \mathbb{R}$, 有
+
 $$
 \lim _{n \rightarrow \infty} F_n(x)=\Phi(x),
 $$
+
 其中 $F_n(x)$ 为 $\frac{1}{\sqrt{n} \sigma}\left(X_1+\cdots+X_n-n \mu\right)$ 的分布函数, 而 $\Phi(x)$ 为标 准正态分布 $N(0,1)$ 的分布函数. 记为
+
 $$
 \frac{1}{\sqrt{n} \sigma}\left(X_1+\cdots+X_n-n \mu\right) \stackrel{d}{\rightarrow} N(0,1)
 $$
