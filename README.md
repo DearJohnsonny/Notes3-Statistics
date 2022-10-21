@@ -218,6 +218,33 @@ $$
 
 其中，对角线上的元素为各个随机变量的方差，非对角线上的元素为两两随机变量之间的协方差，根据协方差的定义，我们可以认定：该协方差矩阵矩阵为对称矩阵(symmetric matrix)，其大小为d×d。
 
+##### 独立变量的协方差
+以上的讨论都是针对一般情况进行计算的，毕竟变量互相独立的情况较少。
+
+不过，如果两个变量 $X ， Y$ 独立，那么它们的协方差 $\operatorname{Cov}(X, Y)=0$ 。简要证明如下 (简单起见，假设变量是离散的)：
+
+由于 $X, Y$ 独立，所以它们的概率密度函数满足: $p(x, y)=p_x(x) p_y(y)$ 。
+
+求出期望:
+
+$$
+\begin{aligned}
+E(X Y) &=\sum_x \sum_y x \times y \times p(x, y) \\
+&=\sum_x \sum_y x \times y \times p_x(x) \times p_y(y) \\
+&=\sum_x x \times p_x(x) \sum_y y \times p_y(y) \\
+&=E(X) E(Y)
+\end{aligned}
+$$
+
+利用协方差的另一个公式: $\operatorname{Cov}(X, Y)=E(X, Y)-E(X) E(Y)$ ，可以推出，当 $X, Y$ 相互独立时， $\operatorname{Cov}(X, Y)=0$ 。 这时，协方差矩阵就变成一个对角矩阵了:
+
+$$
+\operatorname{Cov}(Z)=\left[\begin{array}{cc}
+\operatorname{Cov}(X, X) & 0 \\
+0 & \operatorname{Cov}(Y, Y)
+\end{array}\right]
+$$
+
 ### 预测评价指标
 #### MSE（Mean Square Error）均方误差
 真实值与预测值的插值的平方然后求和平均
