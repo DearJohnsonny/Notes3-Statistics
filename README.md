@@ -329,10 +329,12 @@ $$
 比一元线性回归复杂的是，多元线性回归组成的不是直线，是一个多维空间中的超平面，数据点散落在超平面两侧。比如二元线性回归预测的是一个平面。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/195474650-1b26c285-29f0-4374-8505-2bba2ba5f6b4.png" width="900">
+<img src="https://user-images.githubusercontent.com/111955215/195474650-1b26c285-29f0-4374-8505-2bba2ba5f6b4.png" width="600">
 </div>
 
 当有D种维度的影响因素时，机器学习领域将这D种影响因素成为特征(feature)，每个样本有一个需要预测的Y和一组D维向量X hat，原来的参数m变成了D维的向量W
+
+### 梯度下降法求解
 
 表示为如下：
 
@@ -404,6 +406,26 @@ $$
 $$
 
 最优解其实是在根据自变量向量X和因变量标量y求解。
+
+### 梯度下降法求解
+
+
+### 两者对比
+
+1、梯度下降需要选择学习率 α，迭代很多步，正规方程只需要一步。
+
+2、正规方程依赖于矩阵计算。由于计算逆矩阵的时间复杂度是 O(n3)，当n比较大时，计算过程会特别慢
+  
+$$
+\begin{array}{|l|l|}
+\hline \text { Gradient Descent } & \text { Normal Equation } \\
+\hline \text { Need to choose alpha } & \text { No need to choose alpha } \\
+\hline \text { Needs many iterations } & \text { No need to iterate } \\
+\hline \mathrm{O}\left(k n^2\right) & \mathrm{O}\left(n^3\right), \text { need to calculate inverse of } X^T X \\
+\hline \text { Works well when } \mathrm{n} \text { is large } & \text { Slow if } \mathrm{n} \text { is very large } \\
+\hline
+\end{array}
+$$
 
 **但是**： $X^T X$ 在现实任务中往往不是满秩矩阵（未知数大于方程个数。如：3个变量，但是只有2个方程，故无法求得唯一的解），所以无法求解矩阵的逆，故无法求得唯一的解。遇到这种情况，需要进行：1）降维处理（LASSO和PLS偏最小二乘法）；2）引入正则化(regularization)：将矩阵补成满秩
 
