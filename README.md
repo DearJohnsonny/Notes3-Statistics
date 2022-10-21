@@ -245,6 +245,21 @@ $$
 \end{array}\right]
 $$
 
+##### 协方差矩阵的意义
+当X 与Y 正相关时，它们的分布大部分在区域 (1) 和 (3) 中，小部分在区域 (2) 和 (4) 中，所以平均来 说，有E(X-EX)(Y-EY)>0。
+当 $X$ 与 $Y$ 负相关时，它们的分布大部分在区域 (2) 和 (4) 中，小部分在区域 (1) 和 (3) 中，所以平均来 说，有 $(X-E X)(Y-E Y)<0$ 。
+当 $X$ 与 Y不相关时，它们在区域 (1) 和 (3) 中的分布，与在区域 (2) 和 (4) 中的分布几平一样多，所以平 均来说，有(X-EX)(Y-EY)=0。
+所以，我们可以定义一个表示 $X, Y$ 相互关系的数字特征，也就是协方差
+$\operatorname{cov}(\mathrm{X}, \mathrm{Y})=\mathrm{E}(\mathrm{X}-\mathrm{EX})(\mathrm{Y}-\mathrm{EY})$
+当 $\operatorname{cov}(X, Y)>0$ 时，表明 $X$ 与 $Y$ 正相关；
+当 $\operatorname{cov}(X, Y)<0$ 时，表明 $X$ 与 $Y$ 负相关;
+当 $\operatorname{cov}(X, Y)=0$ 时，表明X与Y不相关。
+这就是协方差的意义。
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/197219036-524e75e0-d9cb-4288-878d-9af0e1146fe5.png" width="1500">
+</div>
+
+
 ### 预测评价指标
 #### MSE（Mean Square Error）均方误差
 真实值与预测值的插值的平方然后求和平均
