@@ -77,6 +77,10 @@ $$
 ## 频率学派与贝叶斯派
 在说极大似然估计（Maximum Likelihood Estimate,MLE）与最大后验概率估计（Maximum A Posteriori estimation,MAP）之前，不得不说对于概率看法不同的两大派别频率学派与贝叶斯派。他们看待世界的视角不同，导致他们对于产生数据的模型参数的理解也不同。
 
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199874742-6da7f193-0918-4c56-adf0-e76b1ef4c6f8.png" width="1000">
+</div>
+
 ### 频率学派
 
 他们认为世界是确定的。他们直接为事件本身建模，也就是说事件在多次重复实验中趋于一个稳定的值p，那么这个值就是该事件的概率。
